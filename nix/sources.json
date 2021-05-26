@@ -1,0 +1,38 @@
+{
+    "matrix-appservice-irc": {
+        "branch": "develop",
+        "description": "Node.js IRC bridge for Matrix",
+        "homepage": null,
+        "owner": "matrix-org",
+        "repo": "matrix-appservice-irc",
+        "rev": "02591d4a2fb82457a67fd30e3c763f4c6278a676",
+        "sha256": "15kszg604sz3i8n05ffmciwgrmq1pczsbspm9iz1dzpa0c2yq0s6",
+        "type": "tarball",
+        "url": "https://github.com/matrix-org/matrix-appservice-irc/archive/02591d4a2fb82457a67fd30e3c763f4c6278a676.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "nixpkgs": {
+        "branch": "nixos-unstable",
+        "description": "Nix Packages collection",
+        "homepage": "",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "ea7d4aa9b8225abd6147339f0d56675d6f1f0fd1",
+        "sha256": "11bwgyglag40w2y50nq2gg4697ymdjprkgip75kb3hjrvvwpma53",
+        "type": "tarball",
+        "url": "https://github.com/NixOS/nixpkgs/archive/ea7d4aa9b8225abd6147339f0d56675d6f1f0fd1.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "npmlock2nix": {
+        "branch": "master",
+        "description": null,
+        "homepage": null,
+        "owner": "tweag",
+        "repo": "npmlock2nix",
+        "rev": "7a321e2477d1f97167847086400a7a4d75b8faf8",
+        "sha256": "10igdxcc6scf6hksjbbgpj877f6ry8mipz97r2v8j718wd233v6a",
+        "type": "tarball",
+        "url": "https://github.com/tweag/npmlock2nix/archive/7a321e2477d1f97167847086400a7a4d75b8faf8.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    }
+}
