@@ -9,14 +9,14 @@ let
   };
 
   src = pkgs.applyPatches {
-    name = "matrix-dimensions";
+    name = "matrix-dimension";
     src = sources.matrix-dimension;
     patches = [
     ];
   };
 
   pkg = pkgs.npmlock2nix.build {
-    name = "matrix-dimensions";
+    name = "matrix-dimension";
     inherit src;
 
     node_modules_attrs = {
@@ -26,18 +26,21 @@ let
 
     nativeBuildInputs = [ pkgs.makeWrapper ];
 
+    outputs = [ "out" "web" ];
+
     installPhase = ''
       runHook preInstall
-      mkdir -p $out/node_modules
-      cp -r build $out/node_modules/matrix-dimensions
+      mkdir -p $out/lib
+      cp -r build/app $out/lib/matrix-dimension
+      cp -r build/web $web
       runHook postInstall
     '';
 
     postFixup = ''
       mkdir -p $out/bin
-     makeWrapper '${pkg.node_modules.nodejs}/bin/node' "$out/bin/matrix-dimensions" \
+     makeWrapper '${pkg.node_modules.nodejs}/bin/node' "$out/bin/matrix-dimension" \
        --set NODE_PATH ${pkg.node_modules}/node_modules \
-       --add-flags "$out/node_modules/matrix-dimensions/app/index.js"
+       --add-flags "$out/lib/matrix-dimension/index.js"
    '';
   };
 in
