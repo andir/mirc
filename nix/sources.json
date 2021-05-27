@@ -1,14 +1,26 @@
 {
     "matrix-appservice-irc": {
-        "branch": "develop",
+        "branch": "hackint-test",
         "description": "Node.js IRC bridge for Matrix",
         "homepage": null,
-        "owner": "matrix-org",
+        "owner": "mweinelt",
         "repo": "matrix-appservice-irc",
-        "rev": "02591d4a2fb82457a67fd30e3c763f4c6278a676",
-        "sha256": "15kszg604sz3i8n05ffmciwgrmq1pczsbspm9iz1dzpa0c2yq0s6",
+        "rev": "8304c354d3dacd2a8fd1b34f4339a8a78a055d44",
+        "sha256": "1h7ghlrskimccnn71xdj8k5m1ipjzrlhxnjpaxja296qnb8bgir0",
         "type": "tarball",
-        "url": "https://github.com/matrix-org/matrix-appservice-irc/archive/02591d4a2fb82457a67fd30e3c763f4c6278a676.tar.gz",
+        "url": "https://github.com/mweinelt/matrix-appservice-irc/archive/8304c354d3dacd2a8fd1b34f4339a8a78a055d44.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "matrix-dimension": {
+        "branch": "master",
+        "description": "An open source integration manager for matrix clients, like Element.",
+        "homepage": "https://dimension.t2bot.io",
+        "owner": "turt2live",
+        "repo": "matrix-dimension",
+        "rev": "b97a0f4bc2a6dc4e2b4080762d84dc659f539b77",
+        "sha256": "0n8k8z82idcl185fyisdp96ar7q5vh541crxhdq72iy3xds2mgin",
+        "type": "tarball",
+        "url": "https://github.com/turt2live/matrix-dimension/archive/b97a0f4bc2a6dc4e2b4080762d84dc659f539b77.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nixpkgs": {
